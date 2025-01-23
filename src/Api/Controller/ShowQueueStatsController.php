@@ -10,7 +10,7 @@
  *
  */
 
-namespace Blomstra\DatabaseQueue\Api\Controller;
+namespace FlarumCom\DatabaseQueue\Api\Controller;
 
 use Carbon\Carbon;
 use Flarum\Http\RequestUtil;

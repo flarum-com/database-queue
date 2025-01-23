@@ -10,7 +10,7 @@
  *
  */
 
-namespace Blomstra\DatabaseQueue\Provider;
+namespace FlarumCom\DatabaseQueue\Provider;
 
 use Illuminate\Database\ConnectionInterface;
 use Illuminate\Database\ConnectionResolverInterface;

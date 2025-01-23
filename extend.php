@@ -10,9 +10,9 @@
  *
  */
 
-namespace Blomstra\DatabaseQueue;
+namespace FlarumCom\DatabaseQueue;
 
-use Blomstra\DatabaseQueue\Console\WorkerArgs;
+use FlarumCom\DatabaseQueue\Console\WorkerArgs;
 use Flarum\Extend;
 use Illuminate\Console\Scheduling\Event;
 

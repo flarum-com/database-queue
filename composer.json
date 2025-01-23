@@ -1,5 +1,5 @@
 {
-    "name": "blomstra/database-queue",
+    "name": "flarum-com/database-queue",
     "description": "Adds Database queues to Flarum",
     "keywords": [
         "flarum",
@@ -11,17 +11,16 @@
     "type": "flarum-extension",
     "authors": [
         {
-            "name": "Team Blomstra",
-            "email": "development@blomstra.net",
-            "role": "Developer"
+            "name": "Flarum BV",
+            "email": "helpdesk@flarum.com"
         }
     ],
     "support": {
-        "issues": "https://github.com/blomstra/flarum-ext-database-queue/issues",
-        "source": "https://github.com/blomstra/flarum-ext-database-queue",
+        "issues": "https://github.com/flarum-com/flarum-ext-database-queue/issues",
+        "source": "https://github.com/flarum-com/flarum-ext-database-queue",
         "forum": "https://discuss.flarum.org/d/28151"
     },
-    "homepage": "https://blomstra.net",
+    "homepage": "https://flarum.org",
     "require": {
         "flarum/core": "^2.0.0-beta"
     },
@@ -35,9 +34,6 @@
                 "color": "#FF9045"
             }
         },
-        "extiverse": {
-            "discuss": ""
-        },
         "flarum-cli": {
             "modules": {
                 "githubActions": true,
@@ -47,7 +43,7 @@
     },
     "autoload": {
         "psr-4": {
-            "Blomstra\\DatabaseQueue\\": "src/"
+            "FlarumCom\\DatabaseQueue\\": "src/"
         }
     },
     "require-dev": {

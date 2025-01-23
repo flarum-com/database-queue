@@ -10,7 +10,7 @@
  *
  */
 
-namespace Blomstra\DatabaseQueue\Console;
+namespace FlarumCom\DatabaseQueue\Console;
 
 use Flarum\Settings\SettingsRepositoryInterface;
 

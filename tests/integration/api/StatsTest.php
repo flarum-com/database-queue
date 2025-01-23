@@ -10,7 +10,7 @@
  *
  */
 
-namespace Blomstra\DatabaseQueue\Tests\integration\api;
+namespace FlarumCom\DatabaseQueue\Tests\integration\api;
 
 use Flarum\Testing\integration\ConsoleTestCase;
 use PHPUnit\Framework\Attributes\Test;

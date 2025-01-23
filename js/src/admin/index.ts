@@ -1,9 +1,9 @@
 import app from 'flarum/admin/app';
 import extendDashboardPage from './extendDashboardPage';
 
-app.initializers.add('blomstra-database-queue', () => {
+app.initializers.add('flarum-com-database-queue', () => {
   app.registry
-    .for('blomstra-database-queue')
+    .for('flarum-com-database-queue')
     .registerSetting({
       setting: 'blomstra-database-queue.retries',
       type: 'number',

@@ -10,14 +10,15 @@
  *
  */
 
-namespace Blomstra\DatabaseQueue\Console;
+namespace FlarumCom\DatabaseQueue\Console;
 
 use Carbon\Carbon;
 use Flarum\Settings\SettingsRepositoryInterface;
 use Illuminate\Contracts\Cache\Repository as Cache;
+use Illuminate\Queue\Console\WorkCommand;
 use Illuminate\Queue\Worker;
 
-class DatabaseWorkCommand extends \Flarum\Queue\Console\WorkCommand
+class DatabaseWorkCommand extends WorkCommand
 {
     public function __construct(Worker $worker, Cache $cache, protected SettingsRepositoryInterface $settings)
     {

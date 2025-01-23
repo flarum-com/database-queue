@@ -10,7 +10,7 @@
  *
  */
 
-namespace Blomstra\DatabaseQueue\Provider;
+namespace FlarumCom\DatabaseQueue\Provider;
 
 use Flarum\Foundation\AbstractServiceProvider;
 use Flarum\Foundation\Config;
