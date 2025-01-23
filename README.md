@@ -1,8 +1,8 @@
-![](https://extiverse.com/extension/blomstra/database-queue/open-graph-image)
+![](https://flarum.org/extension/flarum-com/database-queue/open-graph-image)
 
 This extension allows you to easily run a queue, using your database and by configuring one cron(job).
 
-> **Disclaimer**: this extension is provided "as is" by Blomstra. Only community support is provided.
+> **Disclaimer**: this extension is provided "as is". Only community support is provided.
 
 ## Background and when you need this
 
@@ -15,7 +15,7 @@ To resolve this increasing burden, you can run a Queue. A queue runs on your ser
 ## Install
 
 ```bash
-composer require blomstra/database-queue:"*"
+composer require flarum-com/database-queue:"*"
 ```
 
 Enable the extension inside the admin area. If you already have the Flarum scheduler setup, there's nothing more to do. Otherwise, see below:
@@ -38,8 +38,3 @@ Or in cron language:
 
 *What is the difference with blomstra/flarum-redis?*
 The redis package (it's officially not an extension) is meant for larger communities. Redis offers the ability to scale the number of workers up however you need. Running a queue worker which pulls jobs from the database can also negatively impact your community performance when processing a lot of notifications and other queue tasks.
-
----
-
-- Blomstra provides managed Flarum hosting.
-- https://blomstra.net
