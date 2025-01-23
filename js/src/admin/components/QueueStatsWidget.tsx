@@ -7,7 +7,7 @@ import type Mithril from 'mithril';
 import LinkButton from 'flarum/common/components/LinkButton';
 import Tooltip from 'flarum/common/components/Tooltip';
 import Switch from 'flarum/common/components/Switch';
-import icon from 'flarum/common/helpers/icon';
+import Icon from 'flarum/common/components/Icon';
 
 export default class QueueStatsWidget extends DashboardWidget {
   loading = true;
@@ -117,7 +117,7 @@ export default class QueueStatsWidget extends DashboardWidget {
       <div className="QueueStatsWidget-stat">
         <small>{app.translator.trans('blomstra-database-queue.admin.stats.data.status.label')}</small>
         <p>
-          {icon(iconClass)} {status ? app.translator.trans(`blomstra-database-queue.admin.stats.data.status.${status}`) : ''}
+          <Icon name={iconClass} /> {status ? app.translator.trans(`blomstra-database-queue.admin.stats.data.status.${status}`) : ''}
         </p>
       </div>
     );
