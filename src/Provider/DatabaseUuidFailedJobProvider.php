@@ -17,13 +17,9 @@ use Illuminate\Database\ConnectionResolverInterface;
 
 class DatabaseUuidFailedJobProvider extends \Illuminate\Queue\Failed\DatabaseUuidFailedJobProvider
 {
-    protected $connection;
-
-    public function __construct(ConnectionResolverInterface $resolver, $database, $table, ConnectionInterface $connection)
+    public function __construct(ConnectionResolverInterface $resolver, $database, $table, protected ConnectionInterface $connection)
     {
         parent::__construct($resolver, $database, $table);
-
-        $this->connection = $connection;
     }
 
     /**

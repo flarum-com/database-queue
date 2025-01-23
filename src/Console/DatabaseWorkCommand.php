@@ -19,13 +19,9 @@ use Illuminate\Queue\Worker;
 
 class DatabaseWorkCommand extends \Flarum\Queue\Console\WorkCommand
 {
-    protected $settings;
-
-    public function __construct(Worker $worker, Cache $cache, SettingsRepositoryInterface $settings)
+    public function __construct(Worker $worker, Cache $cache, protected SettingsRepositoryInterface $settings)
     {
         parent::__construct($worker, $cache);
-
-        $this->settings = $settings;
     }
 
     public function handle()

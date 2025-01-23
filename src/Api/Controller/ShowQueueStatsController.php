@@ -26,23 +26,8 @@ use Psr\Http\Server\RequestHandlerInterface;
 
 class ShowQueueStatsController implements RequestHandlerInterface
 {
-    /**
-     * @var Queue
-     */
-    protected $queue;
-
-    /**
-     * @var SettingsRepositoryInterface
-     */
-    protected $settings;
-
-    protected $failer;
-
-    public function __construct(Queue $queue, SettingsRepositoryInterface $settings, FailedJobProviderInterface $failer)
+    public function __construct(protected Queue $queue, protected SettingsRepositoryInterface $settings, protected FailedJobProviderInterface $failer)
     {
-        $this->queue = $queue;
-        $this->settings = $settings;
-        $this->failer = $failer;
     }
 
     public function handle(ServerRequestInterface $request): ResponseInterface
