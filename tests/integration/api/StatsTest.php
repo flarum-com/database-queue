@@ -13,6 +13,7 @@
 namespace Blomstra\DatabaseQueue\Tests\integration\api;
 
 use Flarum\Testing\integration\ConsoleTestCase;
+use PHPUnit\Framework\Attributes\Test;
 
 class StatsTest extends ConsoleTestCase
 {
@@ -21,9 +22,7 @@ class StatsTest extends ConsoleTestCase
         $this->extension('blomstra-database-queue');
     }
 
-    /**
-     * @test
-     */
+    #[Test]
     public function non_admin_cannot_access_stats()
     {
         $response = $this->send($this->request(
@@ -34,9 +33,7 @@ class StatsTest extends ConsoleTestCase
         $this->assertEquals(404, $response->getStatusCode());
     }
 
-    /**
-     * @test
-     */
+    #[Test]
     public function admin_can_access_stats()
     {
         $response = $this->send($this->request(
@@ -57,9 +54,7 @@ class StatsTest extends ConsoleTestCase
         $this->assertEquals(0, $body['failedJobs']);
     }
 
-    /**
-     * @test
-     */
+    #[Test]
     public function admin_can_access_stats_with_queue()
     {
         $commandOutput = $this->runCommand(['command' => 'queue:work', '--stop-when-empty' => true]);
